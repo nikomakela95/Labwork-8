@@ -12,12 +12,12 @@
     <ion-list class="list" inset>
       <ion-item class="label">
         <ion-label color="myWhite" style="font-size:12px" stacked>Username</ion-label>
-        <ion-input type="text" placeholder="Enter Username"></ion-input>
+        <ion-input type="text" #username placeholder="Enter Username"></ion-input>
       </ion-item>
 
       <ion-item class="label">
         <ion-label color="myWhite" style="font-size:12px" stacked>Password</ion-label>
-        <ion-input type="password" placeholder="Enter Password"></ion-input>
+        <ion-input type="password" #password placeholder="Enter Password"></ion-input>
       </ion-item>
     </ion-list>
   </div>
@@ -27,11 +27,11 @@
   <p class="text" style="font-family:open-sans; font-size:14px; color:#ebebeb">Forgot you password?</p>
 
   <div text-center>
-    <button class="btnWidth" ion-button color="secondary" round [navPush]="nextPage">Login</button>
+    <button class="btnWidth" ion-button color="secondary" round (click)="doLogin()">Login</button>
   </div>
 
   <div text-center>
-    <button class="myButton" ion button color="myWhite" round outline [navPush]="nextPage">SignUp</button>
+    <button class="myButton" ion button color="myWhite" round outline (click)="openRegister()">SignUp</button>
   </div>
 
   <img src="assets/imgs/facebook.png" class="fb-button">
