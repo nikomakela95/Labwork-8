@@ -2,10 +2,10 @@ page-login {
     
      //Background image of the login screen
      .bg-image {
-     background-image: url('../assets/imgs/login.jpg');
+     background-image: url('../assets/imgs/kuva4.jpg');
      background-repeat: no-repeat;
      background-position: center;
-     background-size: contain;
+     background-size: cover;
      }
      // Fixing the page with no scroll
      .no-scroll .scroll-content {
@@ -20,7 +20,11 @@ page-login {
      }
     
      .label {
-     background-color: rgba(255,255,255, 0.0);
+        border-color: rgba(0, 0, 0, 0);
+        background-color: rgba(0, 0, 0, 0);
+        color: white; 
+     
+     
     
      }
     

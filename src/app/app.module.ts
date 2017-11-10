@@ -11,6 +11,9 @@ import { TabsPage } from '../pages/tabs/tabs';
 import { WelcomePage } from '../pages/welcome/welcome';
 import { LoginPage} from '../pages/login/login';
 import { RegisterPage} from '../pages/register/register';
+import { NotesPage} from '../pages/notes/notes';
+import { MenuPage} from '../pages/menu/menu';
+
 
 import { HttpModule } from '@angular/http';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
@@ -43,7 +46,9 @@ const firebaseAuth = {
     TabsPage,
     WelcomePage,
     LoginPage,
-    RegisterPage
+    RegisterPage,
+    NotesPage,
+    MenuPage
   ],
   imports: [
     BrowserModule,
@@ -62,7 +67,9 @@ const firebaseAuth = {
     TabsPage,
     WelcomePage,
     LoginPage,
-    RegisterPage
+    RegisterPage,
+    NotesPage,
+    MenuPage
   ],
   providers: [
     StatusBar,
