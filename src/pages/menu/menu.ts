@@ -37,36 +37,36 @@ export class MenuPage {
   ];
 
   constructor(private fire:AngularFireAuth, public navCtrl: NavController, public navParams: NavParams) {
-  this.email = fire.auth.currentUser.email;
-  }
-
-openPage(page: PageInterface){
-  //New object params
-  let params ={};
-
-  if(page.index){
-    params = {tabIndex: page.index};
-  }
-  if(this.nav.getActiveChildNav() && page.index != undefined) {
-    this.nav.getActiveChildNav().select(page.index);
-    //Else is here if we have pages which are not in tabs nav
-  } else {
-    this.nav.setRoot(page.pageName, params);
-  }
-  }
-
-//adding function to show which page is active 
-isActive(page: PageInterface){
-  let childNav = this.nav.getActiveChildNav();
-
-  if(childNav){
-    if (childNav.getSelected() && childNav.getSelected().root == page.tabComponent) {
+    this.email = fire.auth.currentUser.email;
+    }
+  
+  openPage(page: PageInterface){
+    //New object params
+    let params ={};
+  
+    if(page.index){
+      params = {tabIndex: page.index};
+    }
+    if(this.nav.getActiveChildNav() && page.index != undefined) {
+      this.nav.getActiveChildNav().select(page.index);
+      //Else is here if we have pages which are not in tabs nav
+    } else {
+      this.nav.setRoot(page.pageName, params);
+    }
+    }
+  
+  //adding function to show which page is active 
+  isActive(page: PageInterface){
+    let childNav = this.nav.getActiveChildNav();
+  
+    if(childNav){
+      if (childNav.getSelected() && childNav.getSelected().root == page.tabComponent) {
+        return 'primary';
+      }
+      return;
+    }
+    if (this.nav.getActive() && this.nav.getActive().name === page.pageName) {
       return 'primary';
     }
-    return;
+   }
   }
-  if (this.nav.getActive() && this.nav.getActive().name === page.pageName) {
-    return 'primary';
-  }
- }
-}
