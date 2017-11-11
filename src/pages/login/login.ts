@@ -1,10 +1,12 @@
+//<!--Niko Mäkelä 1601538, Matias Rantanen 1601551-->
+
 import { Component, ViewChild } from '@angular/core';
 import { IonicPage, NavController, NavParams, AlertController } from 'ionic-angular';
 import { AngularFireAuth } from 'angularfire2/auth';
 import { TabsPage } from '../tabs/tabs';
 import { RegisterPage } from '../register/register';
 
-//Niko Mäkelä 1601538
+
 
 @IonicPage()
 @Component({

@@ -4,7 +4,7 @@ import { AngularFireAuth } from 'angularfire2/auth';
 
 
 
- //Niko Mäkelä 1601538
+ //<!--Niko Mäkelä 1601538, Matias Rantanen 1601551-->
 @IonicPage()
 @Component({
   selector: 'page-register',

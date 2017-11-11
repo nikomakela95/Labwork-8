@@ -1,3 +1,5 @@
+//Niko Mäkelä 1601538, Matias Rantanen 1601551
+
 import { Component } from '@angular/core';
 import { Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';

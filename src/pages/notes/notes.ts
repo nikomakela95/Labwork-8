@@ -2,12 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { FirebaseListObservable } from 'angularfire2/database';
 import { FirebaseProvider } from './../../providers/firebase/firebase';
-/**
- * Generated class for the NotesPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
+//<!--Niko Mäkelä 1601538, Matias Rantanen 1601551-->
 
 @IonicPage()
 @Component({
@@ -21,7 +16,7 @@ export class NotesPage {
   constructor(public navCtrl: NavController, public NavParams: NavParams, public firebaseProvider: FirebaseProvider) {
     this.shoppingItems = this.firebaseProvider.getShoppingItems();
   }
- 
+ //Adding functions to the buttons
   addItem() {
     this.firebaseProvider.addItem(this.newItem);
   }

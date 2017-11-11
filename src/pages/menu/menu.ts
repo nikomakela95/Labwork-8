@@ -2,7 +2,7 @@ import { Component, ViewChild } from '@angular/core';
 import { IonicPage, NavController, NavParams, Nav } from 'ionic-angular';
 import { AngularFireAuth } from 'angularfire2/auth';
 
-//Niko Mäkelä 1601538
+//<!--Niko Mäkelä 1601538, Matias Rantanen 1601551-->
 
 export interface PageInterface {
    title: string;
