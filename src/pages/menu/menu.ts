@@ -28,9 +28,10 @@ export class MenuPage {
 /**pages to menu */
   pages: PageInterface[] = [
     { title: 'Home', pageName: 'TabsPage', tabComponent: 'HomePage', index: 0, icon: 'home'},
-    { title: 'About', pageName: 'TabsPage', tabComponent: 'AboutPage', index: 1, icon: 'information-circle'},
+    { title: 'Notes', pageName: 'TabsPage', tabComponent: 'NotesPage', index: 1, icon: 'clipboard'},
     { title: 'Contact', pageName: 'TabsPage', tabComponent: 'ContactPage', index: 2, icon: 'contacts'},
-    { title: 'Notes', pageName: 'TabsPage', tabComponent: 'NotesPage', index: 3, icon: 'md-walk'},
+    { title: 'About', pageName: 'TabsPage', tabComponent: 'AboutPage', index: 3, icon: 'information-circle'},
+  
     
   
     

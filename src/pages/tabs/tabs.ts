@@ -12,9 +12,9 @@ import { NotesPage } from '../notes/notes';
 export class TabsPage {
 
   tab1Root = HomePage;
-  tab2Root = AboutPage;
+  tab2Root = NotesPage;
   tab3Root = ContactPage;
-  tab4Root = NotesPage;
+  tab4Root = AboutPage;
   
 
   constructor() {
